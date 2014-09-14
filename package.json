@@ -1,0 +1,36 @@
+{
+  "name": "godot-riemann",
+  "version": "1.0.0",
+  "description": "forwards godot events into riemann",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "godot": "git://github.com/nodejitsu/godot",
+    "riemann": "^0.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^0.8.1",
+    "tap": "^0.4.12"
+  },
+  "scripts": {
+    "test": "eslint index.js test/ && tap test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oroce/godot-riemann.git"
+  },
+  "keywords": [
+    "godot",
+    "riemann",
+    "monitoring",
+    "alerting"
+  ],
+  "author": "oroce <robert@oroszi.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oroce/godot-riemann/issues"
+  },
+  "homepage": "https://github.com/oroce/godot-riemann"
+}
