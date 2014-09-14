@@ -3,7 +3,9 @@
 var test = require('tap').test;
 var Riemann = require('..');
 var createClient = require('riemann').createClient;
-
+var server = require('net').createServer();
+server.listen(5555);
+server.unref();
 test('should reuse client', function(t) {
   var r = new Riemann({
     client: true
